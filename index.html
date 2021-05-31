@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alef Development - тестовое задание</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="logo" href="#">
+                        <img src="images/logo.svg" alt="logo">
+                    </a>
+
+                    <nav class="menu">
+                        <ul class="menu-list">
+                            <li class="menu-list__item">
+                                <a class="menu-list__link" href="#">
+                                    Main
+                                </a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a class="menu-list__link" href="#">
+                                    Gallery
+                                </a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a class="menu-list__link" href="#">
+                                    News
+                                </a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a class="menu-list__link" href="#">
+                                    Profile
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__contact">
+                        <a class="header__contact-tel" href="tel:544349000000">+544 3490 00000</a>
+                        Звони скорее!
+                    </div>
+
+                    <button class="menu__btn">
+                        <span class="menu__btn-line"></span>
+                        <span class="menu__btn-line"></span>
+                        <span class="menu__btn-line"></span>
+                    </button>
+
+                </div>
+
+                <div class="search-result-text">
+                    Найдено 349 котов
+                </div>
+
+            </div>
+            <!-- /.container -->
+        </header>
+        <!-- /.header -->
+
+        <main class="main">
+
+            <div class="catalog">
+                <div class="container">
+
+                    <div class="btn-group">
+                        <span>Сортировать по:</span>
+                        <button class="sort-btn" type="button" data-sort="price:asc">Цене</button>
+                        <button class="sort-btn" type="button" data-sort="age:asc">Возрасту</button>
+                    </div>
+
+                    <div class="catalog__inner">
+
+                        <div class="card card--sale mix" data-price="30000" data-age="2">
+                            <button class="card__favorite-btn"></button>
+                            <span class="card__sale-icon">-40%</span>
+                            <img class="card__img" src="images/content/1.jpg" alt="card image">
+                            <div class="card__info">
+                                <h3 class="card__title">Кот полосатый</h3>
+                                <div class="card__data">
+                                    <div class="card__data-colour">
+                                        Коричневый окрас
+                                    </div>
+                                    <div class="card__data-age">
+                                        <span>2 мес.</span>
+                                        Возраст
+                                    </div>
+                                    <div class="card__data-paw">
+                                        <span>4</span>
+                                        Кол-во лап
+                                    </div>
+                                </div>
+                                <div class="card__price">30 000 руб.</div>
+                            </div>
+                            <button class="card__btn">Купить</button>
+                        </div>
+
+                        <div class="card mix" data-price="40000" data-age="3">
+                            <button class="card__favorite-btn" disabled></button>
+                            <span class="card__sale-icon">-40%</span>
+                            <img class="card__img" src="images/content/2.jpg" alt="card image">
+                            <div class="card__info">
+                                <h3 class="card__title">Кот полосатый</h3>
+                                <div class="card__data">
+                                    <div class="card__data-colour">
+                                        Коричневый окрас
+                                    </div>
+                                    <div class="card__data-age">
+                                        <span>3 мес.</span>
+                                        Возраст
+                                    </div>
+                                    <div class="card__data-paw">
+                                        <span>4</span>
+                                        Кол-во лап
+                                    </div>
+                                </div>
+                                <div class="card__price">40 000 руб.</div>
+                            </div>
+                            <button class="card__btn" disabled>Продан</button>
+                        </div>
+
+                        <div class="card mix" data-price="20000" data-age="4">
+                            <button class="card__favorite-btn"></button>
+                            <span class="card__sale-icon">-40%</span>
+                            <img class="card__img" src="images/content/3.jpg" alt="card image">
+                            <div class="card__info">
+                                <h3 class="card__title">Кот полосатый</h3>
+                                <div class="card__data">
+                                    <div class="card__data-colour">
+                                        Коричневый окрас
+                                    </div>
+                                    <div class="card__data-age">
+                                        <span>4 мес.</span>
+                                        Возраст
+                                    </div>
+                                    <div class="card__data-paw">
+                                        <span>4</span>
+                                        Кол-во лап
+                                    </div>
+                                </div>
+                                <div class="card__price">20 000 руб.</div>
+                            </div>
+                            <button class="card__btn">Купить</button>
+                        </div>
+
+                        <div class="card mix" data-price="25000" data-age="2">
+                            <button class="card__favorite-btn"></button>
+                            <span class="card__sale-icon">-40%</span>
+                            <img class="card__img" src="images/content/1.jpg" alt="card image">
+                            <div class="card__info">
+                                <h3 class="card__title">Кот полосатый</h3>
+                                <div class="card__data">
+                                    <div class="card__data-colour">
+                                        Коричневый окрас
+                                    </div>
+                                    <div class="card__data-age">
+                                        <span>2 мес.</span>
+                                        Возраст
+                                    </div>
+                                    <div class="card__data-paw">
+                                        <span>4</span>
+                                        Кол-во лап
+                                    </div>
+                                </div>
+                                <div class="card__price">25 000 руб.</div>
+                            </div>
+                            <button class="card__btn">Купить</button>
+                        </div>
+
+                        <div class="card card--sale mix" data-price="30000" data-age="1">
+                            <button class="card__favorite-btn"></button>
+                            <span class="card__sale-icon">-40%</span>
+                            <img class="card__img" src="images/content/3.jpg" alt="card image">
+                            <div class="card__info">
+                                <h3 class="card__title">Кот полосатый</h3>
+                                <div class="card__data">
+                                    <div class="card__data-colour">
+                                        Коричневый окрас
+                                    </div>
+                                    <div class="card__data-age">
+                                        <span>1 мес.</span>
+                                        Возраст
+                                    </div>
+                                    <div class="card__data-paw">
+                                        <span>4</span>
+                                        Кол-во лап
+                                    </div>
+                                </div>
+                                <div class="card__price">30 000 руб.</div>
+                            </div>
+                            <button class="card__btn">Купить</button>
+                        </div>
+
+                        <div class="card mix" data-price="10000" data-age="5">
+                            <button class="card__favorite-btn" disabled></button>
+                            <span class="card__sale-icon">-40%</span>
+                            <img class="card__img" src="images/content/2.jpg" alt="card image">
+                            <div class="card__info">
+                                <h3 class="card__title">Кот полосатый</h3>
+                                <div class="card__data">
+                                    <div class="card__data-colour">
+                                        Коричневый окрас
+                                    </div>
+                                    <div class="card__data-age">
+                                        <span>5 мес.</span>
+                                        Возраст
+                                    </div>
+                                    <div class="card__data-paw">
+                                        <span>4</span>
+                                        Кол-во лап
+                                    </div>
+                                </div>
+                                <div class="card__price">10 000 руб.</div>
+                            </div>
+                            <button class="card__btn" disabled>Продан</button>
+                        </div>
+
+                    </div>
+                    <!-- /catalog__inner -->
+
+                    <button class="catalog__btn-more">Показать ещё 20</button>
+
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /catalog -->
+
+        </main>
+        <!-- /.main -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+
+                    <div class="footer__info">
+                        <div class="footer__info-title">Успей купить!</div>
+                        <p class="footer__info-descr">
+                            Подпишись и успей словить все акции
+                        </p>
+                    </div>
+
+                    <form id="form-newsletter" class="footer-form" action="">
+                        <div class="footer-form__group">
+                            <input class="footer-form__email-input" type="email" name="email" id="email"
+                                placeholder="Email">
+                            <button class="footer-form__btn" type="submit">Подписаться</button>
+                        </div>
+
+                        <div class="footer-form__group">
+                            <input class="footer-form__checkbox" type="checkbox" id="newsletter" name="newsletter"
+                                value="1">
+                            <label class="footer-form__label-checkbox" for="newsletter">Подписаться на новости</label>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+            <!-- /.container -->
+        </footer>
+        <!-- /.footer -->
+
+    </div>
+    <!-- /.wrapper -->
+
+    <!-- Btn to top -->
+    <button class="to-top" type="button">
+        <img src="images/icons/white-arrow.svg" alt="arrow to top">
+    </button>
+
+    <!-- Alert modal -->
+    <div class="overlay">
+        <div class="modal-alert" id="alert-modal">
+            <div class="modal-alert__close">&times;</div>
+            <div class="modal-alert__descr">Товар добавлен в избранное!</div>
+         </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

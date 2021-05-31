@@ -1,0 +1,210 @@
+@media (max-width: 1200px) {
+    .wrapper {
+        padding-bottom: 10px;
+    }
+    .catalog__inner {
+        justify-content: space-around;
+    }
+    .footer__info-title {
+        font-size: 40px;
+    }
+    .footer__info-descr {
+        font-size: 24px;
+    }
+    .footer-form__email-input {
+        min-width: 100%;
+        margin-bottom: 15px;
+    }
+    .footer-form__btn {
+        margin-left: 0px;
+        min-width: 100%;
+    }    
+    .footer-form__group:first-of-type {
+        display: block;
+    }
+    .footer-form #email-error {
+        position: static;
+        display: block !important;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 1156px) {
+    .footer__info {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        min-height: 220px;       
+    }
+    .search-result-text {
+        font-size: 34px;
+    }
+    .menu-list__item + .menu-list__item {
+        margin-left: 50px;
+    }
+    .header__contact-tel {
+        font-size: 22px;
+    }
+    .footer__inner {
+        padding: 75px 50px 75px;
+        flex-wrap: wrap;
+    }
+    .footer__info-title {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+    .footer__info-descr {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding-bottom: 0px;
+    }
+    .menu {
+        position: absolute;
+        width: 490px;
+        right: 0;
+        top: 0;
+        text-align: center;
+        background-color: rgb(43, 41, 41);
+        z-index: 5;
+        transform: translateY(-120%);
+        transition: transform .5s linear;
+    }
+    .menu--active {
+        transform: translateY(0%);
+        box-shadow: 14px 8px 8px 2px rgb(0 0 0 / 8%);
+    }
+    .menu-list {
+        display: block;
+    }
+    .menu-list__item + .menu-list__item {
+        margin-left: 0;
+    }
+    .menu-list__link {
+        display: block;
+        padding: 20px 0;
+        font-weight: 700;
+    }
+    .menu__btn {
+        position: absolute;
+        display: block;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        padding: 0;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        z-index: 10;
+    }
+    .header__contact {
+        margin-right: 85px;
+    }
+    .footer {
+        background: #1F2021;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        min-height: 200px;
+        background-position: 25%;
+    }
+    .search-result-text {
+        font-size: 30px;
+    }
+    .menu {
+        width: 100%;
+    }
+    .sort-btn + .sort-btn {
+        margin-left: 30px;
+    }
+    .btn-group span {
+        margin-right: 20px;
+    }
+    .sort-btn {
+        padding-right: 20px;
+    }
+    .catalog {
+        padding-bottom: 50px;
+    }
+    .catalog__btn-more {
+        min-width: 100%;
+        margin: 30px auto 0;
+    }
+    .footer__info-title {
+        font-size: 32px;
+    }
+    .footer__info-descr {
+        font-size: 20px;
+    }
+    .footer__inner {
+        padding: 50px 30px 50px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 450px) {
+    .btn-group {
+        padding: 30px 0;   
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-group span {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .sort-btn {         
+        max-width: 120px;
+    }
+    .sort-btn + .sort-btn {
+        margin-left: 0px;
+    }
+    .sort-btn:first-of-type {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .header {
+        min-height: 180px;
+    }
+    .search-result-text {
+        font-size: 24px;
+    }
+    .header__contact-tel {
+        font-size: 17px;
+    }
+    .header__contact {
+        margin-right: 65px;
+    }
+    .logo {
+        width: 65px;
+        height: 40px;
+    }
+    .catalog__inner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card {
+        width: 100%;
+    }
+    .footer__inner {
+        padding: 50px 3px 50px;
+        flex-wrap: wrap;
+    }
+    .footer__info-descr {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 330px) {
+    .footer-form__email-input {
+        max-width: 100%;
+    }
+}
